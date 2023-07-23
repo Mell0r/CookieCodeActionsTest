@@ -13,5 +13,7 @@ jobs:
 
     steps:
     - uses: actions/setup-node@v3.7.0
+    - name: Install shadow-cljs
+      run: npx install shadow-cljs
     - name: Run tests
       run: npx shadow-cljs compile node-test
